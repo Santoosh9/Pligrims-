@@ -51,6 +51,7 @@ const Navbar = () => {
                 About Us
               </Link>
               <div className="dropdown-content">
+                <Link to="/">Who we are? </Link>
                 <Link to="/">What we do ? </Link>
                 <Link to="/">What We Offer ?</Link>
               </div>
