@@ -20,7 +20,7 @@ const Data = [
     imgSrc: img2,
     destTitle: 'Machu Picchu',
     location: 'Peru',
-    price: '$7,452',
+    price: 'RS 7,452',
   },
 
   {
@@ -28,7 +28,7 @@ const Data = [
     imgSrc: img9,
     destTitle: 'Guanajuato',
     location: 'Mexico',
-    price: '$2,452',
+    price: 'RS 2,452',
   },
 
   {
@@ -36,7 +36,7 @@ const Data = [
     imgSrc: img5,
     destTitle: 'Angkor Wat',
     location: 'Cambodia',
-    price: '$4,400',
+    price: 'RS 4,400',
   },
 ];
 

@@ -6,8 +6,8 @@ import Navbar from '../layouts/Navbar';
 import Footer from '../layouts/Footer';
 import Popular from './Popular';
 import About from './About';
-// import Domestic from './Domestic';
-// import International from './International';
+import Domestic from './Domestic';
+import International from './International';
 import Offer from './Offer';
 // import Testimonial from './Testimonial';
 
@@ -69,8 +69,8 @@ const HomeMain = () => {
         </div>
       </section>
       <Popular />
-      {/* <Domestic />
-      <International /> */}
+      <Domestic />
+      <International />
       <Offer />
       <About />
 
