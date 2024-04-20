@@ -15,10 +15,11 @@ const Footer = () => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
-  const mapEmbedCode = `<iframe style="height: 180px; width: 230px; border:none;"
-   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.246398540595!2d85.31171081113042!3d27.709677625289217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1928123983e1%3A0x66a57eb35a10c35!2sRR%20Shree%20School%20of%20Technology!5e0!3m2!1sen!2snp!4v1708415377230!5m2!1sen!2snp"
-   width="100%" height="350" allowFullScreen="" loading="lazy"
-  referrerPolicy="no-referrer-when-downgrade"></iframe>`;
+  const mapEmbedCode = ` <iframe style="display: flex; flex-wrap: wrap;" class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0"
+            marginwidth="0"
+            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=samakushi kathmNDU&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            width="100%" height="170" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade">></iframe>
+`;
 
   return (
     <div className="footer">
@@ -26,9 +27,7 @@ const Footer = () => {
         <div data-aos="fade-up" data-aos-duration="2000" className="logoDiv">
           <div className="footerLogo">
             <a href="#" className="logo flex">
-              <h1>
-                <img style={imageStyles} src={logo} alt="lpgo" />
-              </h1>
+              <h1>Logo</h1>
             </a>
           </div>
 
@@ -70,7 +69,7 @@ const Footer = () => {
 
           <a href="#">9800009873</a>
 
-          <a href="#">pligrims@gmail.com</a>
+          <a href="#">Travel@gmail.com</a>
         </div>
         <div
           data-aos="fade-up"
@@ -91,7 +90,7 @@ const Footer = () => {
       >
         <p style={{ flexWrap: 'wrap', color: 'grayd' }}>
           Copyright &copy; {new Date().getFullYear()} All rights reserved
-          @pligrimsholidays | Developed by Santosh Gajurel
+          @Travelwebsite | Developed by Santosh Gajurel
         </p>
       </div>
     </div>

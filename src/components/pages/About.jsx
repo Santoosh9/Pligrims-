@@ -3,6 +3,7 @@ import '../styles/About.scss';
 import customerImg from '../../assets/images/customer.png';
 import mountainImg from '../../assets/images/mountain.png';
 import climbingImg from '../../assets/images/climbing.png';
+import video from '../../assets/images/v1.mp4';
 
 import styled from 'styled-components';
 
@@ -23,7 +24,7 @@ const About = () => {
   return (
     <section className="about  section">
       <div className="secContainer">
-        <h2 className="title">Why Pligrims?</h2>
+        <h2 className="title">Why Chhose Us?</h2>
 
         <div className="mainContent container grid">
           <div
@@ -133,7 +134,9 @@ const About = () => {
               </StyledParagraph>
             </div>
 
-            <div data-aos="fade-left" className="cardVideo"></div>
+            <div data-aos="fade-left" className="cardVideo">
+              <video src={video} autoPlay muted loop type="video/mp4"></video>
+            </div>
           </div>
         </div>
       </div>

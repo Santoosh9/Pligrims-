@@ -9,6 +9,7 @@ import About from './About';
 import Domestic from './Domestic';
 import International from './International';
 import Offer from './Offer';
+import Testimonial from './Testimonial';
 // import Testimonial from './Testimonial';
 
 const HomeMain = () => {
@@ -74,7 +75,7 @@ const HomeMain = () => {
       <Offer />
       <About />
 
-      {/* <Testimonial /> */}
+      <Testimonial />
       <Footer />
     </>
   );

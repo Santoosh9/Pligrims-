@@ -1,0 +1,124 @@
+.testimonial {
+    padding: 4rem 0;
+    background-color: var(--greyBg);
+    overflow: hidden;
+
+    .testimonialContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        scroll-behavior: smooth;
+
+        .testimonialCard {
+            flex: 0 0 auto;
+            max-width: 400px;
+            padding: 2rem;
+            background-color: var(--whiteColor);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-right: 1rem;
+            text-align: center;
+            transition: transform 0.3s ease, opacity 0.5s ease;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            .userImage {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%; // Circular border radius
+                margin-bottom: 1rem;
+                animation: fadeIn 1s ease;
+            }
+
+            .testimonialContent {
+                margin-bottom: 1.5rem;
+                opacity: 0; // Initial opacity
+                animation: slideIn 1s ease forwards;
+            }
+
+            .testimonialText {
+                font-size: 16px;
+                color: var(--textColor);
+                margin-bottom: 1rem;
+            }
+
+            .testimonialAuthor {
+                font-size: 14px;
+                color: var(--textColor);
+                font-style: italic;
+            }
+        }
+    }
+
+    .scrollButtons {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+
+        .scrollButton {
+            background-color: transparent;
+            border: none;
+            color: var(--textColor);
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: var(--HoverColor);
+            }
+
+            &:first-child {
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 556px) {
+    .testimonial {
+        .testimonialCard {
+            max-width: 300px;
+        }
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .testimonial {
+        .testimonialCard {
+            max-width: 400px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .testimonial {
+        .testimonialCard {
+            max-width: 500px;
+        }
+    }
+}

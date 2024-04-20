@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../styles/Navbar.scss';
 import { AiFillCloseCircle } from 'react-icons/ai';
 import { TbGridDots } from 'react-icons/tb';
-import logo from '../../assets/images/logo.png';
+
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -34,7 +34,7 @@ const Navbar = () => {
       <header className={transparent}>
         <div className="logoDiv">
           <a href="#" className="logo flex">
-            <img style={imageStyles} src={logo} alt="lpgo" />
+            <h1>Our Logo</h1>
           </a>
         </div>
 
